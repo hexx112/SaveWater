@@ -4,6 +4,7 @@ var going = false;
 function setup() {
 	document.getElementById("final").innerHTML = final;
     $( "#endbtn" ).fadeOut( 0, function() {});
+    document.body.style.zoom="245%"
 }
 
 function start() {
