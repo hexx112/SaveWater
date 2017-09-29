@@ -55,9 +55,6 @@ function decrease(){
 
 function restart(){
     
-    final = 300;
-    document.getElementById("final").innerHTML = final;});
-    
     $( "#endbtn" ).fadeOut( 1000, function() {});
     $( "#highscorecon" ).fadeOut( 1000, function() {});
     $( "#returnbtn" ).fadeOut( 1000, function() {});
@@ -66,6 +63,8 @@ function restart(){
     
     $( "#pl" ).fadeIn( 1000, function() {});
     $( "#final" ).fadeIn( 1000, function() {
+        final = 300;
+        document.getElementById("final").innerHTML = final;});
     $( "#startbtn" ).fadeIn( 1000, function() {});
 
 }
