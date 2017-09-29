@@ -22,7 +22,7 @@ function start() {
 function end() {
     going = false;    
     $( "#endbtn" ).fadeOut( "slow", function() {
-        $("#final").animate({fontSize: "60px" }, 1000 );
+        $("#final").animate({fontSize: "80px" }, 1000 );
         $("#pl").fadeOut(function() {
             $(this).text("You scored:")
         }).fadeIn();
