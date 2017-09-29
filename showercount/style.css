@@ -1,5 +1,15 @@
 /* Button 2a */
 /* General button style (reset) */
+
+@font-face {
+    font-family: "raleway";
+    src: url('raleway.otf');
+}
+
+* {
+    font-family: "raleway";
+}
+
 .modern {
 	border: none;
 	font-family: inherit;
