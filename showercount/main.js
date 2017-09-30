@@ -10,7 +10,7 @@ function setup() {
     
     $( "#totalscorecon" ).fadeOut( 0, function() {});
     $( "#returnbtn" ).fadeOut( 0, function() {});
-    document.body.style.zoom="240%"
+    document.body.style.zoom="238%"
 }
 
 function start() {
