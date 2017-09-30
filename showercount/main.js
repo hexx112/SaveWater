@@ -50,8 +50,6 @@ function end() {
         document.getElementById("totalscore").innerHTML = totalscorenum;
         
         
-        
-        
     });
 }
 
