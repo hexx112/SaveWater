@@ -1,11 +1,14 @@
 var final = 300;
 var going = false;
 var highscorenum = 0;
+var totalscorenum = 0;
 
 function setup() {
 	document.getElementById("final").innerHTML = final;
     $( "#endbtn" ).fadeOut( 0, function() {});
     $( "#highscorecon" ).fadeOut( 0, function() {});
+    
+    $( "#totalscorecon" ).fadeOut( 0, function() {});
     $( "#returnbtn" ).fadeOut( 0, function() {});
     document.body.style.zoom="240%"
 }
@@ -23,7 +26,8 @@ function start() {
 }
 
 function end() {
-    going = false;    
+    going = false;  
+    
     $( "#endbtn" ).fadeOut( "slow", function() {
         
         $("#final").animate({fontSize: "80px" }, 1000 );
@@ -33,6 +37,7 @@ function end() {
         }).fadeIn();
         
         $( "#highscorecon" ).fadeIn( "slow", function() {});
+        $( "#totalscorecon" ).fadeIn( "slow", function() {});
         
         $( "#returnbtn" ).fadeIn( "slow", function() {});
         
@@ -40,6 +45,13 @@ function end() {
             highscorenum = final;
             document.getElementById("highscore").innerHTML = highscorenum;
         }
+        
+        totalscorenum = final + totalscorenum;
+        document.getElementById("totalscore").innerHTML = totalscorenum;
+        
+        
+        
+        
     });
 }
 
@@ -55,7 +67,7 @@ function decrease(){
 
 function restart(){
 
-    $( "#returnbtn" ).fadeOut( 1000, function() {});
+    $( "#returnbtn" ).fadeOut( 0000, function() {});
     
     $( "#endbtn" ).fadeOut( 5000, function() {});
     
@@ -68,11 +80,11 @@ function restart(){
     $( "#pl" ).fadeOut( 1000, function() {
         $("#pl").text("Time remaining:")
         $( "#pl" ).fadeIn( 1000, function() {});
-        });
+    });
 
     $( "#startbtn" ).fadeIn( 1000, function() {});
     
     $( "#highscorecon" ).fadeIn( 1000, function() {});
-    
+    $( "#totalscorecon" ).fadeIn( 1000, function() {});
 
 }

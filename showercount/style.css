@@ -6,8 +6,13 @@
     src: url('raleway.ttf');
 }
 
+@font-face {
+    font-family: "8bit";
+    src: url('8bit.ttf');
+}
+
 * {
-    font-family: "raleway";
+    font-family: "8bit";
     background-color: #e6e8e6;
 }
 
