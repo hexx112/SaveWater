@@ -7,7 +7,7 @@ function setup() {
     $( "#endbtn" ).fadeOut( 0, function() {});
     $( "#highscorecon" ).fadeOut( 0, function() {});
     $( "#returnbtn" ).fadeOut( 0, function() {});
-    document.body.style.zoom="245%"
+    document.body.style.zoom="240%"
 }
 
 function start() {
@@ -54,17 +54,25 @@ function decrease(){
 }
 
 function restart(){
-    
-    $( "#endbtn" ).fadeOut( 1000, function() {});
-    $( "#highscorecon" ).fadeOut( 1000, function() {});
+
     $( "#returnbtn" ).fadeOut( 1000, function() {});
-    $( "#final" ).fadeOut( 1000, function() {});
-    $( "#pl" ).fadeOut( 1000, function() {});
     
-    $( "#pl" ).fadeIn( 1000, function() {});
-    $( "#final" ).fadeIn( 1000, function() {
+    $( "#endbtn" ).fadeOut( 5000, function() {});
+    
+    $( "#final" ).fadeOut( 1000, function() {
         final = 300;
-        document.getElementById("final").innerHTML = final;});
+        document.getElementById("final").innerHTML = final;
+        $( "#final" ).fadeIn( 1000, function() {});
+    });
+        
+    $( "#pl" ).fadeOut( 1000, function() {
+        $("#pl").text("Time remaining:")
+        $( "#pl" ).fadeIn( 1000, function() {});
+        });
+
     $( "#startbtn" ).fadeIn( 1000, function() {});
+    
+    $( "#highscorecon" ).fadeIn( 1000, function() {});
+    
 
 }
