@@ -10,7 +10,7 @@ function setup() {
     
     $( "#totalscorecon" ).fadeOut( 0, function() {});
     $( "#returnbtn" ).fadeOut( 0, function() {});
-    document.body.style.zoom="238%"
+    document.body.style.zoom="230%"
 }
 
 function start() {
@@ -20,7 +20,6 @@ function start() {
 	$( "#startbtn" ).fadeOut( "slow", function() {
         $("#final").animate({fontSize: "40px" }, 1000 );
         decrease();
-        $( "#endbtn" ).fadeIn( "slow", function() {});
     });
 	
 }
@@ -63,6 +62,16 @@ function decrease(){
     if (going == true){
         setTimeout(decrease, 1000);
     }
+    
+    if (final == 0){
+        
+        $("*:not(button)").css('background', '#d73232');
+    }
+    
+    if (final < 200){
+        
+         $( "#endbtn" ).fadeIn( "slow", function() {});
+    }
 }
 
 function restart(){
@@ -86,5 +95,7 @@ function restart(){
     
     $( "#highscorecon" ).fadeIn( 1000, function() {});
     $( "#totalscorecon" ).fadeIn( 1000, function() {});
+    
+    $("*:not(button)").css('background', '#e6e8e6');
 
 }
