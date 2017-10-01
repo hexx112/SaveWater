@@ -4,19 +4,24 @@ var highscorenum = 0;
 var totalscorenum = 0;
 
 function setup() {
+
+    //setup
 	document.getElementById("final").innerHTML = final;
     $( "#endbtn" ).fadeOut( 0, function() {});
     $( "#highscorecon" ).fadeOut( 0, function() {});
     
     $( "#totalscorecon" ).fadeOut( 0, function() {});
     $( "#returnbtn" ).fadeOut( 0, function() {});
+    
+    //zoom
     document.body.style.zoom="230%"
 }
 
 function start() {
-    
+    //on click of start button
     going = true;
     
+    //fade out start button
 	$( "#startbtn" ).fadeOut( "slow", function() {
         $("#final").animate({fontSize: "40px" }, 1000 );
         decrease();
@@ -25,8 +30,10 @@ function start() {
 }
 
 function end() {
+    //change going to false
     going = false;  
     
+    //after fadeout of endbutton
     $( "#endbtn" ).fadeOut( "slow", function() {
         
         $("#final").animate({fontSize: "80px" }, 1000 );
@@ -40,14 +47,15 @@ function end() {
         
         $( "#returnbtn" ).fadeIn( "slow", function() {});
         
+        //update highscore
         if (final > highscorenum){
             highscorenum = final;
             document.getElementById("highscore").innerHTML = highscorenum;
         }
         
+        //update totalscore
         totalscorenum = final + totalscorenum;
         document.getElementById("totalscore").innerHTML = totalscorenum;
-        
         
         
         
@@ -56,18 +64,19 @@ function end() {
 
 function decrease(){
     
+    //decrease
     final = final - 1;
     document.getElementById("final").innerHTML = final;
     
     if (going == true){
         setTimeout(decrease, 1000);
     }
-    
+    //turn red
     if (final == 0){
         
         $("*:not(button)").css('background', '#d73232');
     }
-    
+    //only add endbtn after 100 secs
     if (final < 200){
         
          $( "#endbtn" ).fadeIn( "slow", function() {});
@@ -75,7 +84,7 @@ function decrease(){
 }
 
 function restart(){
-
+    //fade everything out and add only the bits you need back in
     $( "#returnbtn" ).fadeOut( 0000, function() {});
     
     $( "#endbtn" ).fadeOut( 5000, function() {});
