@@ -78,8 +78,9 @@ function decrease(){
     }
     //only add endbtn after 100 secs
     if (final < 200){
-        
-         $( "#endbtn" ).fadeIn( "slow", function() {});
+        if(going == true){
+            $( "#endbtn" ).fadeIn( "slow", function() {});
+        }
     }
 }
 
