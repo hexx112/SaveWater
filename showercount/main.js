@@ -2,6 +2,7 @@ var final = 300;
 var going = false;
 var highscorenum = 0;
 var totalscorenum = 0;
+var clickedend = false;
 
 function setup() {
 
@@ -14,7 +15,7 @@ function setup() {
     $( "#returnbtn" ).fadeOut( 0, function() {});
     
     //zoom
-    document.body.style.zoom="230%"
+    document.body.style.zoom="225%"
 }
 
 function start() {
@@ -33,6 +34,7 @@ function end() {
     //change going to false
     going = false;  
     
+
     //after fadeout of endbutton
     $( "#endbtn" ).fadeOut( "slow", function() {
         
@@ -57,13 +59,12 @@ function end() {
         totalscorenum = final + totalscorenum;
         document.getElementById("totalscore").innerHTML = totalscorenum;
         
-        
-        
     });
+    
 }
 
 function decrease(){
-    
+    clickedend = true;
     //decrease
     final = final - 1;
     document.getElementById("final").innerHTML = final;
