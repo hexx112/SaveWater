@@ -13,7 +13,13 @@
 
 * {
     font-family: "8bit";
-    background-color: #e6e8e6;
+    /*background-color: #e6e8e6;*/
+    background-color: #256d7b;
+    color: #F5F3F5;
+}
+
+.coin{
+
 }
 
 .topcorner{
@@ -24,13 +30,13 @@
     margin-bottom: 5px;
     margin-right: 5px;
  }
- 
+
 
 .modern {
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
-	color: white;
+	color: inherit;
 	background: #124e78;
 	cursor: pointer;
 	padding: 25px 80px;
@@ -73,7 +79,7 @@
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
-	color: white;
+	color: inherit;
 	background: #124e78;
 	cursor: pointer;
 	padding: 25px 80px;

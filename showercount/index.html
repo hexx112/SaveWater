@@ -2,24 +2,23 @@
 <html>
 	<body onload="setup()">
 		<center class = "whole">
-        
-		<script type="text/javascript" src="main.js"></script>
+
+			<script type="text/javascript" src="main.js"></script>
         <script type="text/javascript" src="jquery-3.2.1.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
-        
 
-		<p id = "pl" >Time remaining:</p>
+
+				<p id = "pl" >Time remaining:</p>
         <p><span id="final"></span></p>
 
-        <p id = "highscorecon" >High score: <span id="highscore"></span></p>
-        <p id = "totalscorecon" >Total score: <span id="totalscore"></span></p>
-        
-		<button class="modern" id="startbtn" onclick="start()">Start your shower</button>
-        
+        <p id = "highscorecon" >Highest score: <span id="highscore"></span></p>
+        <p id = "totalscorecon" >Total coins: <span id="totalscore"></span><img src="coin.gif" class = "coin" HEIGHT="35" WIDTH="35" id="coin" alt=""></p>
+				<button class="modern" id="startbtn" onclick="start()">Start your shower</button>
+
         <button class="modern" id="endbtn" onclick="end()">End your shower</button>
-        
+
         <button id="returnbtn" onclick = "restart()" class="modern2">Return</button>
-        
+
         <div class="topcorner">Created by Lewis Carson</div>
 
 		</center>
