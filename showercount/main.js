@@ -1,6 +1,6 @@
 
 //setup variables (global)
-var final = 300;
+var final = 500;
 var going = false;
 var highscorenum = 0;
 var totalscorenum = 0;
