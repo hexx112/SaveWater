@@ -16,7 +16,7 @@ function setup() {
 
     $( "#totalscorecon" ).fadeOut( 0, function() {});
     $( "#returnbtn" ).fadeOut( 0, function() {});
-	$( "#coin" ).fadeOut( 0, function() {});
+		$( "#coin" ).fadeOut( 0, function() {});
 
     //zoom
     document.body.style.zoom="175%"
@@ -115,7 +115,7 @@ function restart(){
     $( "#totalscorecon" ).fadeIn( 1000, function() {});
 
     $("*:not(button)").css('background', '#e6e8e6');
-    
+
 	$( "#coin" ).fadeOut( 1000, function() {});
     //select all object which arent a button and reset the background colour
     $("*:not(button)").css('background', '#256d7b');
