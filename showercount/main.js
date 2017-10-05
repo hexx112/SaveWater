@@ -16,13 +16,10 @@ function setup() {
 
     $( "#totalscorecon" ).fadeOut( 0, function() {});
     $( "#returnbtn" ).fadeOut( 0, function() {});
-<<<<<<< HEAD
-=======
-		$( "#coin" ).fadeOut( 0, function() {});
->>>>>>> 23e308b9d80a54ca71e6b4cffa4b2e39de527564
+	$( "#coin" ).fadeOut( 0, function() {});
 
     //zoom
-    document.body.style.zoom="225%"
+    document.body.style.zoom="175%"
 }
 
 function start() {
@@ -54,11 +51,7 @@ function end() {
         $( "#highscorecon" ).fadeIn( "slow", function() {});
         $( "#totalscorecon" ).fadeIn( "slow", function() {});
 
-<<<<<<< HEAD
-=======
-				$( "#coin" ).fadeIn( "slow", function() {});
-
->>>>>>> 23e308b9d80a54ca71e6b4cffa4b2e39de527564
+		$( "#coin" ).fadeIn( "slow", function() {});
         $( "#returnbtn" ).fadeIn( "slow", function() {});
 
         //update highscore
@@ -120,15 +113,10 @@ function restart(){
 
     $( "#highscorecon" ).fadeIn( 1000, function() {});
     $( "#totalscorecon" ).fadeIn( 1000, function() {});
-<<<<<<< HEAD
 
     $("*:not(button)").css('background', '#e6e8e6');
-
-=======
-
-		$( "#coin" ).fadeOut( 1000, function() {});
+    
+	$( "#coin" ).fadeOut( 1000, function() {});
     //select all object which arent a button and reset the background colour
     $("*:not(button)").css('background', '#256d7b');
-
->>>>>>> 23e308b9d80a54ca71e6b4cffa4b2e39de527564
 }
