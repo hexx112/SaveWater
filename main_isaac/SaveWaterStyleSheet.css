@@ -1,7 +1,11 @@
+
 body{
-	font-size: medium;
+	
     	font-family: Helvetica;
     	background-color: #F0F0F0;
-	color: #3C3C3C
+	text-align:center;
+	color: #3C3C3C;
+	margin-right:auto;
+	margin-left:auto;
 }
 	
