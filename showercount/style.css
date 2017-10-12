@@ -12,14 +12,12 @@
 }
 
 * {
-<<<<<<< HEAD
     font-family: "8bit", monospace;
-    background-color: #e6e8e6;
-    font-family: "8bit";
     /*background-color: #e6e8e6;*/
-    background-color: #256d7b;
-    color: #F5F3F5;
+    background-color: #F2F0E6;
+    color: #0D0C1D;
 }
+
 
 .coin{
 }
@@ -38,7 +36,7 @@
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
-	color: inherit;
+	color: #C5D1EB;
 	background: #124e78;
 	cursor: pointer;
 	padding: 25px 80px;
@@ -81,7 +79,7 @@
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
-	color: inherit;
+	color: #C5D1EB;
 	background: #124e78;
 	cursor: pointer;
 	padding: 25px 80px;

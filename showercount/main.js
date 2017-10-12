@@ -114,9 +114,9 @@ function restart(){
     $( "#highscorecon" ).fadeIn( 1000, function() {});
     $( "#totalscorecon" ).fadeIn( 1000, function() {});
 
-    $("*:not(button)").css('background', '#e6e8e6');
+    $("*:not(button)").css('background', '#F2F0E6');
 
-	$( "#coin" ).fadeOut( 1000, function() {});
+		$( "#coin" ).fadeOut( 1000, function() {});
     //select all object which arent a button and reset the background colour
     $("*:not(button)").css('background', '#256d7b');
 }
