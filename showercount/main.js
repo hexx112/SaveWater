@@ -117,6 +117,4 @@ function restart(){
     $("*:not(button)").css('background', '#F2F0E6');
 
 		$( "#coin" ).fadeOut( 1000, function() {});
-    //select all object which arent a button and reset the background colour
-    $("*:not(button)").css('background', '#256d7b');
 }
